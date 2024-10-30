@@ -5,27 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Three Bridges Venture Group</title>
 <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #161b22;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+ 
+  
+  body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+  .bg-container {
+      /* Fill the entire viewport */
+      min-height: 100vh;
+      width: 100%;
+      
+      /* Set background image */
+      background-image: url('presrange.webp');
+      
+      /* Make background responsive */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      /* Fix background while scrolling (optional) */
+      background-attachment: fixed;
   }
   .footer-text {
-    text-align: center;
-    color:#404040;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
+      color:silver;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 20px;
+      text-align:center;
   }
 </style>
 </head>
 <body>
+  <div class="bg-container">
   <div class="footer-text">
-    <h1>THREE BRIDGES</h1>
-    <p>VENTURE GROUP</p>
+    <div style="font-size: 22px;color: white;">THREE BRIDGES</div>
+    <div style="font-size: 14px;color: wwhitesmokehite;">VENTURE GROUP</div>
+  </div>
   </div>
 </body>
 </html>

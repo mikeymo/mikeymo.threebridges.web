@@ -42,12 +42,24 @@
     }
 
     .responsive-image {
-            width: 80%;
+            width: 50%;
             height: auto;
-            max-width: 80%;
+            max-width: 50%;
         }
 
-     
+        /* Optional: Different sizes for different screen widths */
+        @media (min-width: 768px) {
+            .responsive-image {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .responsive-image {
+                max-width: 30%;
+            }
+        }
 </style>
 </head>
 <body>
